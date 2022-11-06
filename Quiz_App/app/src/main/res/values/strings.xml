@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Quiz_App</string>
+    <string name="question_one">1) Kotlin is: </string>
+    <string name="question_two">2) 2) Which declarations are only visible in class: </string>
+    <string name="question_one_a">Statically Typed</string>
+    <string name="question_one_b">Dynamically Typed</string>
+    <string name="question_one_c">Both</string>
+    <string name="question_two_a">Public</string>
+    <string name="question_two_b">Protected</string>
+    <string name="question_two_c">Private</string>
+    <string name="submit_btn">Submit</string>
+    <string name="reset_btn">Reset</string>
+</resources>
