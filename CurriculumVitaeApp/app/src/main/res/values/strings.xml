@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CurriculumVitaeApp</string>
+    <string name="Home">Home</string>
+    <string name="AboutMe">About Me</string>
+    <string name="Work">Work</string>
+    <string name="Contact">Contact</string>
 </resources>

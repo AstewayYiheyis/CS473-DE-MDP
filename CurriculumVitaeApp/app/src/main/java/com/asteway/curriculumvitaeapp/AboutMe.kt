@@ -1,20 +1,19 @@
 package com.asteway.curriculumvitaeapp
 
-import android.content.Intent;
-import android.os.Bundle
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
 import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 
-class MainActivity : AppCompatActivity() {
+class AboutMe : AppCompatActivity() {
     lateinit var aboutMeButton: TabLayout;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.about)
 
         supportActionBar?.setTitle("CV");
         aboutMeButton = findViewById(R.id.HeaderTabLayout) as TabLayout;
-        aboutMeButton.addOnTabSelectedListener(object : OnTabSelectedListener {
+        aboutMeButton.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 when(tab.position){
                     0 -> {
@@ -30,8 +29,6 @@ class MainActivity : AppCompatActivity() {
                         openContact();
                     }
                 }
-
-
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab) {}
