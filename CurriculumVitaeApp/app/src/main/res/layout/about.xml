@@ -62,7 +62,7 @@
             android:text="About Me \n \n Versatile IT professional with 5+ years of experience blending strong technical, analytical, and operational skills to assess and address the needs of diverse users. Adept in development of responsive, interactive applications for companies ranging in size and complexity. Experienced working with diverse teams, clients, and system users – analyzing and troubleshooting technical issues in fast-paced environments using Java, Spring, Hibernate, JavaScript, and Restful API. Experienced in front-end development using HTML5, CSS3, SASS, and React. " />
 
         <TextView
-            android:id="@+id/Education"
+            android:id="@+id/Work"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20px"

@@ -100,7 +100,7 @@
             android:text="Career Note \n \n Completed on-campus studies and currently taking distance education courses to complete a Master's Degree in Computer Science (Available for full-time, W-2 employment)" />
 
         <TextView
-            android:id="@+id/Education"
+            android:id="@+id/Work"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="20px"
