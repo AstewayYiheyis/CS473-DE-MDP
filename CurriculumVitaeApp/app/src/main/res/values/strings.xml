@@ -4,4 +4,25 @@
     <string name="AboutMe">About Me</string>
     <string name="Work">Work</string>
     <string name="Contact">Contact</string>
+    <string name="my_contacts">My Contacts</string>
+    <string name="phone_number">+16159382365</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="my_email">astewayiheyis@gmail.com</string>
+    <string name="linkedin_url">https://www.linkedin.com/in/asteway-yiheyis</string>
+    <string name="linkedin_website">Linkedin Website</string>
+    <string name="github_url">https://github.com/AstewayYiheyis</string>
+    <string name="github">GitHub</string>
+    <string name="pdf">PDF</string>
+    <string name="resume_pdf">Resume pdf</string>
+    <string name="work_experience">Work Experience</string>
+    <string name="african_union_commision">African Union Commission</string>
+    <string name="mid_2019_20">2019-2020</string>
+    <string name="mit_consultant">MIT consultant</string>
+    <string name="present">2022-Present</string>
+    <string name="perificent">Perficient</string>
+    <string name="software_developer">Software Developer</string>
+    <string name="position_one">Software Developer</string>
+    <string name="work_one">Vamdas</string>
+    <string name="year_one">2016-2020</string>
 </resources>

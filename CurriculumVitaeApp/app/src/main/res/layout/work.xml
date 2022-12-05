@@ -10,7 +10,7 @@
         android:id="@+id/HeaderTabLayout"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="45dp"
         android:layout_marginBottom="7dp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="406dp"
-        android:layout_height="300dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -60,24 +60,26 @@
             android:layout_height="wrap_content"
             android:paddingLeft="20px"
             android:paddingTop="30px"
-            android:text="@string/Work" />
+            android:text="@string/work_experience"
+            android:textSize="34sp" />
 
         <LinearLayout
             android:layout_width="391dp"
-            android:layout_height="51dp"
-            android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="154dp"
-                android:layout_height="50dp"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/img_au_logo_palmleaves" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
@@ -86,7 +88,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="African Union Commission"
+                    android:text="@string/african_union_commision"
+                    android:textColorHint="#0B0A0A"
                     android:textSize="16sp" />
 
                 <TextView
@@ -94,14 +97,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="2019-2020" />
+                    android:text="@string/mid_2019_20" />
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="MIT consultant" />
+                    android:text="@string/mit_consultant" />
 
             </LinearLayout>
 
@@ -109,14 +112,14 @@
 
         <LinearLayout
             android:layout_width="391dp"
-            android:layout_height="51dp"
-            android:orientation="horizontal"
-            android:layout_margin="8dp">
+            android:layout_height="100dp"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="154dp"
-                android:layout_height="50dp"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/vamdaslogovertlrg" />
 
@@ -131,7 +134,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Vamdas"
+                    android:text="@string/work_one"
                     android:textSize="16sp" />
 
                 <TextView
@@ -139,14 +142,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="2016-2020" />
+                    android:text="@string/year_one" />
 
                 <TextView
                     android:id="@+id/textView4_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Software Developer" />
+                    android:text="@string/position_one" />
 
             </LinearLayout>
 
@@ -154,14 +157,14 @@
 
         <LinearLayout
             android:layout_width="391dp"
-            android:layout_height="51dp"
+            android:layout_height="100dp"
             android:layout_margin="8dp"
             android:orientation="horizontal">
 
             <ImageView
                 android:id="@+id/imageView3"
                 android:layout_width="154dp"
-                android:layout_height="50dp"
+                android:layout_height="100dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/perficicent_logo" />
 
@@ -176,7 +179,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Perficient"
+                    android:text="@string/perificent"
                     android:textSize="16sp" />
 
                 <TextView
@@ -184,14 +187,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="2022-Current" />
+                    android:text="@string/present" />
 
                 <TextView
                     android:id="@+id/textView4_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Software Developer" />
+                    android:text="@string/software_developer" />
 
             </LinearLayout>
 
