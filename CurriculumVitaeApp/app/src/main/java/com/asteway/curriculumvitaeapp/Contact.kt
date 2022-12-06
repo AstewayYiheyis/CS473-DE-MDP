@@ -95,7 +95,7 @@ class Contact : AppCompatActivity() {
     }
 
     fun openPdf(view: View) {
-        val uri = Uri.parse(("https://github.com/AstewayYiheyis"))
+        val uri = Uri.parse(("https://github.com/AstewayYiheyis/CS473-DE-MDP/blob/master/CurriculumVitaeApp/app/src/main/res/pdf/Asteway.Yiheyis-Resume.pdf"))
         val linkedInIntent = Intent(Intent.ACTION_VIEW, uri)
 
         try {
