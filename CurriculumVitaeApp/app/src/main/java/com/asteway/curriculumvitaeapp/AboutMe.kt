@@ -1,19 +1,29 @@
 package com.asteway.curriculumvitaeapp
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import com.google.android.material.tabs.TabLayout
 
 class AboutMe : AppCompatActivity() {
-    lateinit var aboutMeButton: TabLayout;
+    lateinit var headerLayOut: TabLayout;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.about)
 
         supportActionBar?.setTitle("CV");
-        aboutMeButton = findViewById(R.id.HeaderTabLayout) as TabLayout;
-        aboutMeButton.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+        headerLayOut = findViewById(R.id.HeaderTabLayout) as TabLayout;
+        val tab: TabLayout.Tab? = headerLayOut.getTabAt(1)
+        if (tab != null) {
+            tab.select()
+        }
+        headerLayOut.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 when(tab.position){
                     0 -> {
@@ -36,8 +46,58 @@ class AboutMe : AppCompatActivity() {
         })
     }
 
+    fun openTelegram(item: MenuItem){
+        val uri = Uri.parse(("http://www.telegram.org"))
+        val telegramIntent = Intent(Intent.ACTION_VIEW, uri)
+
+        try {
+            startActivity(telegramIntent)
+        } catch (e: ActivityNotFoundException) {
+            Log.e(this.localClassName, "No Activity can handle the intent!")
+        }
+    }
+
+    fun openLinkedin(item: MenuItem){
+        val uri = Uri.parse(("https://www.linkedin.com/in/asteway-yiheyis"))
+        val linkedInIntent = Intent(Intent.ACTION_VIEW, uri)
+
+        try {
+            startActivity(linkedInIntent)
+        } catch (e: ActivityNotFoundException) {
+            Log.e(this.localClassName, "No Activity can handle the intent!")
+        }
+    }
+
+    fun openWhatsapp(item: MenuItem){
+        val uri = Uri.parse(("https://web.whatsapp.com/"))
+        val linkedInIntent = Intent(Intent.ACTION_VIEW, uri)
+
+        try {
+            startActivity(linkedInIntent)
+        } catch (e: ActivityNotFoundException) {
+            Log.e(this.localClassName, "No Activity can handle the intent!")
+        }
+    }
+
+    fun openGmail(item: MenuItem){
+        val uri = Uri.parse(("https://mail.google.com/mail/u/0/#inbox?compose=VpCqJRzBTxPfZPQtJKtFFKgXKwqMHrwwTGMpNsQSVxJsnCpBMccBGxBcbWVxrmVPXNdbtRg"))
+        val linkedInIntent = Intent(Intent.ACTION_VIEW, uri)
+
+        try {
+            startActivity(linkedInIntent)
+        } catch (e: ActivityNotFoundException) {
+            Log.e(this.localClassName, "No Activity can handle the intent!")
+        }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.options_menu, menu)
+        return true
+    }
+
     fun openHome(){
-        val intent = Intent(applicationContext, MainActivity::class.java);
+        val intent = Intent(applicationContext, Home::class.java);
         startActivity(intent)
     }
 

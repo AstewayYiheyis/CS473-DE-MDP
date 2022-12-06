@@ -21,18 +21,21 @@
             android:id="@+id/Home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:text="@string/Home" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/AboutMe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:text="@string/AboutMe" />
 
         <com.google.android.material.tabs.TabItem
             android:id="@+id/Work"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:text="@string/Work"
             tools:layout_editor_absoluteX="211dp"
             tools:layout_editor_absoluteY="147dp" />
@@ -41,6 +44,7 @@
             android:id="@+id/Contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clickable="true"
             android:text="@string/Contact" />
     </com.google.android.material.tabs.TabLayout>
 
@@ -53,12 +57,12 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="391dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:orientation="vertical"
+        android:paddingRight="5dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HeaderTabLayout">
 
@@ -68,7 +72,7 @@
             android:layout_height="219dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:paddingLeft="20px"
+            android:layout_marginRight="5dp"
             android:text="About Me \n \n Versatile IT professional with 5+ years of experience blending strong technical, analytical, and operational skills to assess and address the needs of diverse users. Adept in development of responsive, interactive applications for companies ranging in size and complexity. Experienced working with diverse teams, clients, and system users – analyzing and troubleshooting technical issues in fast-paced environments using Java, Spring, Hibernate, JavaScript, and Restful API. Experienced in front-end development using HTML5, CSS3, SASS, and React. " />
 
         <TextView
@@ -81,14 +85,16 @@
 
         <LinearLayout
             android:layout_width="391dp"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingRight="35dp">
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="225dp"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/maharishi_international_university_logo_1" />
 
@@ -101,7 +107,7 @@
                 <TextView
                     android:id="@+id/textView3_2"
                     android:layout_width="wrap_content"
-                    android:layout_height="8dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Maharishi International University"
                     android:textSize="16sp" />
@@ -110,6 +116,7 @@
                     android:id="@+id/textView4_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:text="Master of Science in Computer Science" />
@@ -120,14 +127,15 @@
 
         <LinearLayout
             android:layout_width="391dp"
-            android:layout_height="80dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingRight="35dp">
 
             <ImageView
                 android:id="@+id/imageView_2"
                 android:layout_width="225dp"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/blc_seal_web" />
 
@@ -140,7 +148,7 @@
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
-                    android:layout_height="8dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:text="Maharishi International University"
                     android:textSize="16sp" />
@@ -149,6 +157,7 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_weight="1"
                     android:text="Master of Science in Computer Science" />

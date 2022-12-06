@@ -8,21 +8,18 @@ import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.tabs.TabLayout
 
-class Work : AppCompatActivity() {
+class Home : AppCompatActivity() {
     lateinit var headerLayOut: TabLayout;
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.work)
+        setContentView(R.layout.home)
 
         supportActionBar?.setTitle("CV");
         headerLayOut = findViewById(R.id.HeaderTabLayout) as TabLayout;
-        val tab: TabLayout.Tab? = headerLayOut.getTabAt(2)
-        if (tab != null) {
-            tab.select()
-        }
         headerLayOut.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
             override fun onTabSelected(tab: TabLayout.Tab) {
                 when(tab.position){
@@ -39,8 +36,6 @@ class Work : AppCompatActivity() {
                         openContact();
                     }
                 }
-
-
             }
 
             override fun onTabUnselected(tab: TabLayout.Tab) {}
